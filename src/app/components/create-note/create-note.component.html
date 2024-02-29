@@ -1,0 +1,44 @@
+
+<div class="create-cnt-1">
+
+    <div class="takenotes-main-cnt" *ngIf="toggleClose else open" (click)="toggle('open')">
+        <input class="takenotes-input" placeholder="Take a note..." style="width:500px; " />
+        <div class="takenotes-inner-cnt"  style="background-color: transparent;">
+            <mat-icon svgIcon="tick-icon" aria-hidden="false" aria-label="Note SVG icon"></mat-icon>
+            <mat-icon svgIcon="brush-icon" aria-hidden="false" aria-label="Note SVG icon"></mat-icon>
+            <mat-icon svgIcon="image-icon" aria-hidden="false" aria-label="Note SVG icon"></mat-icon>
+        </div>
+    </div>
+</div>
+
+<div class="create-cnt-2">
+    <ng-template #open>
+        <div class="takenotes-main-cnth">
+          <div class="takenote-input-1-cnt">
+              <input class="takenote-inputs-1"  placeholder="Title"  [(ngModel)]="title">
+              <mat-icon svgIcon="pin-icon" aria-hidden="false" aria-label="Note SVG icon"></mat-icon>
+            </div>
+          <div>
+              <textarea class="takenote-inputs-2" placeholder="Take notes"style="width:90%;word-wrap: break-word;"   [(ngModel)]="desc" ></textarea>
+          </div>
+          <div class="takenotes-icon-main-cnt" >
+              <div class="takenotes-icon-cnt">
+                <mat-icon svgIcon="reminder-icon" aria-hidden="false" aria-label="Note SVG icon"></mat-icon>
+                <mat-icon svgIcon="collaborator-icon" aria-hidden="false" aria-label="Note SVG icon"></mat-icon>
+                <mat-icon svgIcon="color-pallet-icon" aria-hidden="false" aria-label="Note SVG icon"></mat-icon>
+                <mat-icon svgIcon="image-icon" aria-hidden="false" aria-label="Note SVG icon"></mat-icon>
+                <mat-icon svgIcon="archive-icon" aria-hidden="false" aria-label="Note SVG icon"></mat-icon>
+                <mat-icon svgIcon="more-icon" aria-hidden="false" aria-label="Note SVG icon"></mat-icon>
+              </div>
+              <div class="takenotes-undo-icon" >
+                <mat-icon svgIcon="undo-icon" aria-hidden="false" aria-label="Note SVG icon"></mat-icon>
+                <mat-icon svgIcon="rendo-icon" aria-hidden="false" aria-label="Note SVG icon"></mat-icon>
+    
+              </div>
+              <div class="takenotes-close-btn" (click)="toggle('close')" >Close</div>
+          </div>
+      </div>
+       </ng-template>
+</div>
+
+   

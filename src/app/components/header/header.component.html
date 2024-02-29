@@ -1,0 +1,46 @@
+
+
+<div class="dashboard-header">
+
+  <div class="header-inner-cnt-1">
+    <mat-icon svgIcon="menu-icon" aria-hidden="false" aria-label="Note SVG icon" (click)="toggleDrawerState()"></mat-icon>
+           
+      <img  class="img-google-keep-logo"  src="../../../assets/google keep.png" alt=""  >
+      <span class="logo-text">Fundo</span>
+  </div>
+ 
+  <div class="header-inner-cnt-2">
+    <mat-icon svgIcon="search-icon" aria-hidden="false" aria-label="Note SVG icon"></mat-icon>
+
+      <input class="search_bar" type="text" placeholder="Search">
+      <!-- <img class="img-close" src="../../icons/close.png" alt=""> -->
+      <mat-icon svgIcon="delete-icon" aria-hidden="false" aria-label="Note SVG icon"></mat-icon>
+
+  </div>
+   <div class="c-3-4">
+  <div class="header-inner-cnt-3">
+    <mat-icon svgIcon="refresh-icon" aria-hidden="false" aria-label="Note SVG icon"></mat-icon>
+
+    <mat-icon svgIcon="list-icon" aria-hidden="false" aria-label="Note SVG icon"></mat-icon>
+
+    <mat-icon svgIcon="setting-icon" aria-hidden="false" aria-label="Note SVG icon"></mat-icon>
+
+    <div class="header-inner-cnt-4">
+        <mat-icon svgIcon="other-menu-icon" aria-hidden="false" aria-label="Note SVG icon"></mat-icon>
+        <mat-icon svgIcon="account-icon" aria-hidden="false" aria-label="Note SVG icon" [matMenuTriggerFor]="logout"  class="custom-menu-trigger"> </mat-icon> 
+     
+    </div>
+  </div>
+ </div>
+       
+</div>
+
+<mat-menu #logout="matMenu" yPosition="below">
+  <div class="show-more-cnt">
+
+      <div (click)="handleNoteOperations()" >Logout</div>
+    
+
+  </div>
+</mat-menu>
+

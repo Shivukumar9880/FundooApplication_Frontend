@@ -1,0 +1,169 @@
+::ng-deep .app-dashboard-cnt{
+    width: 100%;
+    height: 100vh;
+    display: block;
+
+}
+
+// ::ng-deep .mat-menu-panel{
+
+    
+//     border: 2px solid red;
+//     width: 50px;
+//     height: 20px;
+//     background-color: antiquewhite;
+
+
+// }
+
+
+
+.dashboard-header{
+    border: 1px  solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    // gap:40px;
+    background-color: #ffffff;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+.header-inner-cnt-1{
+ margin-left: 20px;
+ margin-right: 75px; 
+ display: flex;
+ align-items: center;
+ justify-content: space-evenly;
+//  border: 1px solid black;
+ height: 50px;
+ gap:15px;
+}
+
+.img-main-menu{
+    height: 23px;
+}
+.img-google-keep-logo{
+    height: 40px;
+
+}
+.logo-text{
+    display: inline-block;
+    font-family: "Product Sans",Arial,sans-serif;
+    font-weight: 400;
+    font-size: x-large;
+    line-height: 24px;
+    padding-left: 8px;
+    position: relative;
+    top: -1.8px;
+    vertical-align: middle;
+  
+    color: rgb(0, 0, 0);
+}
+.header-inner-cnt-2{
+
+    display: flex;
+    align-items: center;
+    justify-content: start;
+      border: 1px solid #d1d4d6;
+    height: 50px;
+    width: 720px;
+    gap:10px;
+    border-radius: 10px;
+    background-color: #d1d4d6;
+    padding-left: 10px;
+    padding-right: 10px;
+    // box-shadow: 10px 10px 10px 10px rgba(0.8, 0.8, 0.8, 0.8); /* Adjust the values as needed */
+
+
+}
+
+.header-inner-cnt-2:hover{
+    background-color: white;
+}
+.img-search-icon{
+    height: 23px;
+}
+.search_bar{
+    font-size: 20px;
+    width: 800px;
+    border: none;
+    outline: none; /* Removes the default focus outline */
+    background-color: transparent;
+    border-radius: 24px; 
+    
+}
+.search_bar::placeholder {
+    color: rgb(173, 167, 167); 
+}
+.img-close{
+    height: 23px;
+}
+
+.header-inner-cnt-3{
+    //  border: 1px solid black;
+    margin-left: 200px;
+    margin-right: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-self: start;
+    gap:20px
+}
+.img-restart{
+    height: 23px;
+}
+.img-setting-icon{
+    height: 23px;
+}
+
+.header-inner-cnt-4{
+    // border: 1px solid black;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-self: start;
+    gap:30px ;
+    margin-left: 10px;
+    padding-left: 80px;
+}
+.img-google-app-icon{
+    height: 23px;
+}
+.img-user{
+    height: 23px;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24;
+    color: #c2c9d1; 
+  }
+  .c-3-4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:150px
+  }
+  .show-more-cnt{
+    width: 80px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    padding-left: 40px;
+    overflow: hidden; /* Hide scroll bars */
+    max-height: none !important; /* Override max height */
+    max-width: none !important;
+    height: 30px;
+  }
+  .custom-menu-trigger {
+    overflow-y: hidden !important;
+    overflow-x: hidden !important;
+}
+
+  
+

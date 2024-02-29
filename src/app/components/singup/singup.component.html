@@ -1,0 +1,82 @@
+
+<div class="outer-cnt">
+  <div class="singup-outer-cnt">
+
+    <form class="singup-inner-cnt1" [formGroup]="signupform" (ngSubmit)="handleSignup()" >
+          <!-- title -->
+          <div class="title-subtitle-cnt">  
+          <span class="title-subtitle-cnt-title-1">Fundoo</span>
+          <span class="title-subtitle-cnt-title-2"> Create Your Fundoo Account</span>
+    </div>
+
+  <!-- First Name And Last Name -->
+
+        <div class="signip-name-cnt">
+          <mat-form-field appearance="outline" class="login-form-input">
+            <mat-label> First Name</mat-label>
+            <input   formControlName="firstName" matInput placeholder="FirstName">
+            <mat-error *ngIf="submitted && signupControl['firstName']?.hasError('required')">FirstName Required</mat-error>
+
+          </mat-form-field>
+          <mat-form-field appearance="outline" class="login-form-input">
+            <mat-label>Last Name</mat-label>
+            <input formControlName = "lastName" matInput placeholder="lastName">
+            <mat-error *ngIf="submitted && signupControl['lastName']?.hasError('required')">LastName Required</mat-error>
+
+          </mat-form-field>
+        </div>
+
+        <!-- User name -->
+      <div class="signip-username-cnt">
+        <mat-form-field appearance="outline" class="login-form-input">
+          <mat-label>User Name</mat-label>
+          <input   formControlName="emailId" matInput placeholder="UserName">
+          <mat-error *ngIf="submitted && signupControl['emailId']?.hasError('required')">UserName Required</mat-error>
+        </mat-form-field>
+      </div>
+      <span>
+        You can use letters, Numbers & Periods
+      </span>
+      <!-- passsowd And Conform password -->
+      <div class="signip-password-cnt">
+        <mat-form-field appearance="outline" class="login-form-input">
+          <mat-label> Password</mat-label>
+          <input  formControlName="password" matInput placeholder="FirstName">
+          <mat-error *ngIf="submitted && signupControl['password']?.hasError('required')">Password Required</mat-error>
+
+        </mat-form-field>
+        <mat-form-field appearance="outline" class="login-form-input">
+          <mat-label>Conform Password</mat-label>
+          <input matInput placeholder="Password">
+        </mat-form-field>
+      </div>
+      <span>
+        Use 8 or more charecters with a mix of letters,numbers,symbols
+      </span>
+
+  <!-- register button  -->
+        <div class="signup-footer-btn-ctn">
+          <button mat-button color="primary" (click)="handleNavigation()">Sign in insted</button>
+
+          <button mat-raised-button color="primary">Register</button>
+      </div> 
+ </form>
+ <div class="singup-inner-cnt2">
+
+    <div class="signup-inner-cnt2-img">
+      <img class ="img" src="../../../assets/googleOne.png" alt="image Not FOund">
+    </div>
+    <div class="singup-inner-cnt2-title">
+      <span>One account. All of fundo working for you</span>
+    </div>
+
+ </div>
+</div>
+
+<div class="sign-footer-cnt">
+<span>Help</span>
+<span>Privacy</span>
+<span>Terms</span>
+</div>
+
+</div>

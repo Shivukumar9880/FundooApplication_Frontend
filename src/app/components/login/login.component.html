@@ -1,0 +1,40 @@
+
+<div class="login-footer-main-cnt">
+    <form class="login-outer-cnt" [formGroup]="loginForm"(ngSubmit)="handleLogin()">
+
+        <div class="title-subtitle-cnt">  
+        <span class="title-subtitle-cnt-title-1">Fundoo</span>
+        <span class="title-subtitle-cnt-title-2">Sign in</span>
+        <span>Use Your Fundoo Account</span>
+    
+        </div>
+    
+        <mat-form-field appearance="outline" class="login-form-input">
+            <mat-label>Email id</mat-label>
+            <input formControlName="emailId" matInput placeholder="Email id">
+            <mat-error *ngIf="submitted && loginControl['emailId']?.hasError('required')">Email Required</mat-error>
+          </mat-form-field>
+          <mat-form-field appearance="outline" class="login-form-input">
+            <mat-label>Password</mat-label>
+            <input formControlName="password"  matInput placeholder="Password">
+            <mat-error *ngIf="submitted && loginControl['password']?.hasError('required')">password Required</mat-error>
+          </mat-form-field>
+        <button mat-button color="primary" class="login-forgot-btn">Forgot Password</button>
+    
+        <div class="login-footer-btn-ctn">
+            <button mat-button color="primary" (click)="handleNavigation()">Create Account</button>
+    
+            <button mat-raised-button color="primary">Login</button>
+        </div>
+       <!-- (click)="handleLogin()" -->
+        
+    </form>
+    
+    <div class="login-footer-cnt">
+        <span>Help</span>
+        <span>Privacy</span>
+        <span>Terms</span>
+    </div>
+</div>
+
+

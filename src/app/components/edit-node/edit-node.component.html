@@ -1,0 +1,34 @@
+<div style="background-color:#434445;">
+
+  <mat-dialog-content class="mat-typography" >
+      <div class="takenote-input-1-cnt">
+          <input class="takenote-inputs-1" [(ngModel)]="title" placeholder="Title">
+          <mat-icon svgIcon="pin-icon" aria-hidden="false" aria-label="Note SVG icon"></mat-icon>
+      </div>
+      <div>
+          <input class="takenote-inputs-2" [(ngModel)]="desc" placeholder="Take notes">
+      </div>
+</mat-dialog-content>       
+<mat-dialog-actions align="end" style="margin-bottom: -3px;justify-content:'center';margin-left: -51px;padding:5px;">
+  <div class="takenotes-icon-cnt">
+    <mat-icon svgIcon="reminder-icon" aria-hidden="false" aria-label="Note SVG icon"></mat-icon>
+    <mat-icon svgIcon="collaborator-icon" aria-hidden="false" aria-label="Note SVG icon"></mat-icon>
+    <mat-icon svgIcon="color-pallet-icon" aria-hidden="false" aria-label="Note SVG icon"></mat-icon>
+    <mat-icon svgIcon="image-icon" aria-hidden="false" aria-label="Note SVG icon"></mat-icon>
+    <mat-icon svgIcon="archive-icon" aria-hidden="false" aria-label="Note SVG icon"></mat-icon>
+    <mat-icon svgIcon="more-icon" aria-hidden="false" aria-label="Note SVG icon"></mat-icon>
+  </div>
+  <div class="takenotes-undo-icon" >
+    <mat-icon svgIcon="undo-icon" aria-hidden="false" aria-label="Note SVG icon"></mat-icon>
+    <mat-icon svgIcon="rendo-icon" aria-hidden="false" aria-label="Note SVG icon"></mat-icon>
+  
+  </div>
+          <div class="takenotes-close-btn" (click)="handleEditNote()" >Close</div>
+    
+</mat-dialog-actions>
+
+</div>
+
+<!-- 
+ -->
+

@@ -1,0 +1,4 @@
+
+<div *ngFor="let note of notesList" style="display: inline-block; flex-wrap: wrap;">
+        <app-note-card [noteObj]="note" [container]="'trash'" (updateList) = "updateTrash($event)"></app-note-card>
+</div>

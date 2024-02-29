@@ -1,0 +1,76 @@
+<mat-drawer-container class="example-container" [hasBackdrop]="false" >
+    <mat-drawer [opened]="state" #drawer [mode]="'over'"  class="mat-drawer-cnt">
+        <span (click)="handleNavigation('note')" class="click-event">
+          <mat-icon svgIcon="note-icon" aria-hidden="false" aria-label="Note SVG icon"  class="mat"></mat-icon>
+          <div class="label">
+            <span >Note</span>
+          </div>        
+        </span> 
+        <br>
+        <span  (click)="handleNavigation('remainder')" class="click-event">
+          <mat-icon svgIcon="reminder-icon" aria-hidden="false" aria-label="Note SVG icon" class="mat"></mat-icon>
+         <div  class="label">
+          <span >Reminder</span>
+         </div>
+         
+        </span> 
+        <br>
+        <span  (click)="handleNavigation('edit')" class="click-event">
+          <mat-icon svgIcon="edit-icon" aria-hidden="false" aria-label="Note SVG icon" class="mat"></mat-icon>
+          <div  class="label">
+            <span >Edit labels</span>
+           </div>
+        </span> 
+        <br>
+        <span (click)="handleNavigation('archive')" class="click-event">
+          <mat-icon svgIcon="archive-icon" aria-hidden="false" aria-label="Note SVG icon" class="mat"></mat-icon>
+          <div  class="label">
+            <span >Archive</span>
+           </div>
+        </span>
+        <br>
+        <span  (click)="handleNavigation('trash')" class="click-event">
+          <mat-icon svgIcon="trash-icon" aria-hidden="false" aria-label="Note SVG icon" class="mat"></mat-icon>
+          <div  class="label">
+            <span>Trash</span>
+           </div>
+        </span> 
+        
+
+    </mat-drawer>
+    <mat-drawer-content >
+      <div style="display: flex; gap: 20px;">
+         <div class="drawer-cnt">
+          <span (click)="handleNavigation('note')">
+            <mat-icon svgIcon="note-icon" aria-hidden="false" aria-label="Note SVG icon" ></mat-icon>
+            <!-- <span>notes</span> -->
+          </span> 
+          <br>
+          <span  (click)="handleNavigation('remainder')">
+            <mat-icon svgIcon="reminder-icon" aria-hidden="false" aria-label="Note SVG icon"></mat-icon>
+            <!-- <span>reminder</span> -->
+          </span> 
+          <br>
+          <span  (click)="handleNavigation('edit')">
+            <mat-icon svgIcon="edit-icon" aria-hidden="false" aria-label="Note SVG icon"></mat-icon>
+            <!-- <span>editLabel</span> -->
+          </span> 
+          <br>
+          <span (click)="handleNavigation('archive')">
+            <mat-icon svgIcon="archive-icon" aria-hidden="false" aria-label="Note SVG icon"></mat-icon>
+            <!-- <span>archive</span> -->
+          </span>
+          <br>
+          <span  (click)="handleNavigation('trash')">
+            <mat-icon svgIcon="trash-icon" aria-hidden="false" aria-label="Note SVG icon"></mat-icon>
+            <!-- <span>trash</span> -->
+          </span> 
+        </div>
+         <div >
+          <router-outlet></router-outlet>
+        </div>
+      </div>
+
+    </mat-drawer-content>
+  </mat-drawer-container>
+  

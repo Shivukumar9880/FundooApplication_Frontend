@@ -1,0 +1,114 @@
+.outer-cnt{
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.singup-outer-cnt{
+
+    width: 850px;
+    height: 430px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 6px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    // padding-top: 20px;
+    // padding-bottom: 20px;
+    // padding-left: 10px;
+    // padding-right: 10px;
+    // background-color: aqua;
+    padding: 20px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.8); /* Adjust the values as needed */
+
+    
+}
+.singup-inner-cnt1
+{   width: 450px;
+    height: auto;
+    // border: 1px solid rgb(187, 23, 23);
+    border-radius: 6px;
+    // background-color: aqua;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.title-subtitle-cnt{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    padding-bottom: 20px;
+}
+
+.title-subtitle-cnt-title-1{
+    font-size: larger;
+    color: #ffac00;
+    font-weight: 550;
+    
+}
+.title-subtitle-cnt-title-2{
+    font-size: larger;
+}
+.signip-name-cnt{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.signip-username-cnt{
+    display: flex;
+    flex-direction: column;
+}
+.signip-password-cnt{
+    display: flex;
+    flex-direction: row;
+justify-content: space-between;
+}
+.signup-footer-btn-ctn{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.singup-inner-cnt2
+{   width: 300px;
+    height: auto;
+    // border: 1px solid rgb(179, 29, 29);
+    border-radius: 6px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 74px;
+}
+.signup-inner-cnt2-img{
+    width: auto;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // background-color: blueviolet;
+    
+}
+.img{
+    width: 345px;
+}
+.singup-inner-cnt2-title{
+    font-size: x-large;
+    text-align: center;
+    font-weight: 550;
+    line-height: 30px;
+    padding-top: 50px;
+
+
+}
+.sign-footer-cnt{
+    width: 890px;
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+
+}
